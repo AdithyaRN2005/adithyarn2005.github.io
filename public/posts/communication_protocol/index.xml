@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Communication Protocol on Adithya&#39;s Blog</title>
+    <link>http://localhost:1313/posts/communication_protocol/</link>
+    <description>Recent content in Communication Protocol on Adithya&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jan 2026 06:00:20 +0600</lastBuildDate><atom:link href="http://localhost:1313/posts/communication_protocol/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>I2C</title>
+      <link>http://localhost:1313/posts/communication_protocol/i2c/</link>
+      <pubDate>Thu, 08 Jan 2026 06:00:20 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/communication_protocol/i2c/</guid>
+      <description>&lt;h3 id=&#34;complete-post-coming-soon&#34;&gt;Complete Post Coming Soon&amp;hellip;&lt;/h3&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/posts/communication_protocol/introduction/</link>
+      <pubDate>Thu, 08 Jan 2026 06:00:20 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/communication_protocol/introduction/</guid>
+      <description>&lt;h2 id=&#34;data-communication&#34;&gt;Data Communication&lt;/h2&gt;
+&lt;p&gt;Data transfers can happen either serially or parallely. In serial communication,data bits are transmitted one by one whereas in parallel commuication, all bits are transmitted simultaneously.&lt;/p&gt;
+&lt;p&gt;Serial Communication can be asynchronous or synchronous.
+In asynchronous serial communication, a single byte is transferred at a time. It does not require a clock signal. Eg: UART
+In Synchronous coommunication,a block of data is transferred at a time. It requires a clock signal. Eg: I2C, SPI&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UART: Universal Asynchronous Receiver and Transmitter</title>
+      <link>http://localhost:1313/posts/communication_protocol/uart/</link>
+      <pubDate>Thu, 08 Jan 2026 06:00:20 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/communication_protocol/uart/</guid>
+      <description>&lt;p&gt;UART is a two wired Asynchronous serial communication protocol&lt;/p&gt;
+&lt;p&gt;For UART Communication, we need to configure both devices with same speeed, i.e. baud rate.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Baud Rate is the data transfer rate on bits per sec.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;UART Protocol requires a start bit and a stop bit. Data length can vary froom 5 bits to 9 bits. These should be configured before using UART. It uses NRZ (Non Return to zero) encoding for transmission. UART uses little endian bit ordering, which means the least significant bit is transmitted first.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
