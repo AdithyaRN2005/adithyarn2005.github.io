@@ -17,4 +17,7 @@ For UART Communication, we need to configure both devices with same speeed, i.e.
 _Baud Rate is the data transfer rate on bits per sec._
 
 UART Protocol requires a start bit and a stop bit. Data length can vary froom 5 bits to 9 bits. These should be configured before using UART. It uses NRZ (Non Return to zero) encoding for transmission. UART uses little endian bit ordering, which means the least significant bit is transmitted first. 
+
+### UART via ESP32
+
 ### Complete Post Coming Soon...
