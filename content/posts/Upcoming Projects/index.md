@@ -13,7 +13,7 @@ categories: ["Basic"]
 # Project Idea
 This post contains the list of projects that I wish to do
 
-## Circuit Projects
+## Circuit Projectshi
 
 ### 555 Timer
     - Analyze Astable,Monostable and Bistable Modes
@@ -30,5 +30,11 @@ This post contains the list of projects that I wish to do
     -My Talking Tom
 
 # Uploading a new post
+For Local Host: hugo server
 Follow the following Step:
--
+```
+git add .
+git status
+git commit -m "Project Bucketlist added"
+git push origin main
+```

@@ -6,7 +6,19 @@
     <description>Recent content in Basic on Adithya&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 08:06:25 +0600</lastBuildDate><atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 08 Feb 2026 08:06:25 +0600</lastBuildDate><atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Colpitts Oscillator</title>
+      <link>http://localhost:1313/posts/colpitts_oscillator/</link>
+      <pubDate>Sun, 08 Feb 2026 08:06:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/colpitts_oscillator/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In this article, I&amp;rsquo;m going to discuss about Colpitts Oscillator. We will first look into the theory on how colpitts oscillator work and then implement one on our own in breadboard. We&amp;rsquo;ll also look into practical challenges of making the oscillator in a breadboard.&lt;/p&gt;
+&lt;h1 id=&#34;whats-a-oscillator&#34;&gt;What&amp;rsquo;s a Oscillator?&lt;/h1&gt;
+&lt;p&gt;Oscillator is a circuit that generates a aleternating current signal from the power supplied to it without any external signal. This is generally used in generating a clock signal. It is also used in many sensing applications.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
       <link>http://localhost:1313/posts/introduction/</link>
       <pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate>
@@ -33,8 +45,29 @@
       <guid>http://localhost:1313/posts/upcoming-projects/</guid>
       <description>&lt;h1 id=&#34;project-idea&#34;&gt;Project Idea&lt;/h1&gt;
 &lt;p&gt;This post contains the list of projects that I wish to do&lt;/p&gt;
-&lt;h2 id=&#34;555-timer-projects&#34;&gt;555 Timer Projects&lt;/h2&gt;
-&lt;h3 id=&#34;circuits&#34;&gt;Circuits&lt;/h3&gt;</description>
+&lt;h2 id=&#34;circuit-projectshi&#34;&gt;Circuit Projectshi&lt;/h2&gt;
+&lt;h3 id=&#34;555-timer&#34;&gt;555 Timer&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;- Analyze Astable,Monostable and Bistable Modes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;transistors&#34;&gt;Transistors&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;- BJT vs MOSFET
+- How to bias a transistor
+- Output Difference
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;amplifiers&#34;&gt;Amplifiers&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;-Theory and Practical Knowledge on Class A,B,C,D Amplifiers
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;major-project&#34;&gt;Major Project&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;-My Talking Tom
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;uploading-a-new-post&#34;&gt;Uploading a new post&lt;/h1&gt;
+&lt;p&gt;For Local Host: hugo server
+Follow the following Step:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git add .
+git status
+git commit -m &amp;#34;Project Bucketlist added&amp;#34;
+git push origin main
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     
