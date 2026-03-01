@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Feb 2026 08:06:25 +0600</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>All you need to know about TTP223 Capaciitive Touch Sensor</title>
+      <link>http://localhost:1313/posts/ttp223_touch_sensor/</link>
+      <pubDate>Sun, 08 Feb 2026 08:06:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/ttp223_touch_sensor/</guid>
+      <description>&lt;p&gt;In this article, I&amp;rsquo;m going to discuss about TTP223 Capacitive Touch Sensor module.&lt;/p&gt;
+&lt;p&gt;A capacitive touch sensor detect touch by measuring variation in capacitance when a conductive object is brought closer to the sensor.&lt;/p&gt;
+&lt;p&gt;Genrerally, in a capacitive touch sensor, copper pad on PCB act as bottom conductive plate, PCB material along with air act as dielectric and our finger act as the second plate. Therefore a capacitance is formed when our finger is brought closer to the copper pad.  TTP223 will detect this change in capacitance and provide a usable output. TTP223 can be configured for Active HIGH or Active LOW output. In both modes it suports both momentary and self latching output. However, every TTP223 module may not provide us the choice to configure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Colpitts Oscillator</title>
       <link>http://localhost:1313/posts/colpitts_oscillator/</link>
       <pubDate>Sun, 08 Feb 2026 08:06:25 +0600</pubDate>

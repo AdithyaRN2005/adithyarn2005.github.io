@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>I2C</title>
+    <title>All you need to know about TTP223 Capaciitive Touch Sensor</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -28,7 +28,7 @@
 <meta property="og:url" content="http://localhost:1313/">
 
     
-<meta name="description" content="I2C" />
+<meta name="description" content="Complete theory and practical use of TTP223 Capacitive Touch Sensor" />
 
 
 
@@ -251,10 +251,13 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
+    
+    
+  
   
     
     
-    <li><a class=" list-link" href="http://localhost:1313/posts/ttp223_touch_sensor/" title="TTP223 Touch Sensor">TTP223 Touch Sensor</a></li>
+    <li><a class="active list-link" href="http://localhost:1313/posts/ttp223_touch_sensor/" title="TTP223 Touch Sensor">TTP223 Touch Sensor</a></li>
     
   
 
@@ -316,15 +319,12 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
-    
-    
-  
   
     
     <li>
-      <i data-feather="minus-circle"></i><a class="active list-link" href="http://localhost:1313/posts/communication_protocol/"> Communication Protocol</a>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="http://localhost:1313/posts/communication_protocol/"> Communication Protocol</a>
       
-      <ul class="active">
+      <ul class="">
         
   
   
@@ -352,13 +352,10 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
-    
-    
-  
   
     
     
-    <li><a class="active list-link" href="http://localhost:1313/posts/communication_protocol/i2c/" title="I2C">I2C</a></li>
+    <li><a class=" list-link" href="http://localhost:1313/posts/communication_protocol/i2c/" title="I2C">I2C</a></li>
     
   
 
@@ -391,19 +388,80 @@ document.documentElement.setAttribute('data-theme', theme)
         <div class="author-profile ms-auto align-self-lg-center">
           <img class="rounded-circle" src='http://localhost:1313/images/author/MyProfile_hu_25016d8403e62bdc.jpeg' alt="Author Image">
           <h5 class="author-name">Adithya Ramesh Nambiar</h5>
-          <p class="text-muted">Thursday, January 8, 2026</p>
+          <p class="text-muted">Sunday, February 8, 2026</p>
         </div>
         
 
         <div class="title">
-          <h1>I2C</h1>
+          <h1>All you need to know about TTP223 Capaciitive Touch Sensor</h1>
         </div>
 
         
 
         
         <div class="post-content" id="post-content">
-          <h3 id="complete-post-coming-soon">Complete Post Coming Soon&hellip;</h3>
+          <p>In this article, I&rsquo;m going to discuss about TTP223 Capacitive Touch Sensor module.</p>
+<p>A capacitive touch sensor detect touch by measuring variation in capacitance when a conductive object is brought closer to the sensor.</p>
+<p>Genrerally, in a capacitive touch sensor, copper pad on PCB act as bottom conductive plate, PCB material along with air act as dielectric and our finger act as the second plate. Therefore a capacitance is formed when our finger is brought closer to the copper pad.  TTP223 will detect this change in capacitance and provide a usable output. TTP223 can be configured for Active HIGH or Active LOW output. In both modes it suports both momentary and self latching output. However, every TTP223 module may not provide us the choice to configure.</p>
+<p>Here, I&rsquo;m using this small red TTP223 capacitance touch module which provide us configuration choice. By default it comes in Active HIGH momentary output configuration. Inorder to configure the output, we have to short the necessary A or B pad to VCC (VCC pad is available near to both A and B).</p>
+<div>
+  <img src="ModuleExplainer.svg"
+       alt="TTP223 Module"
+       style="display: block; margin: 0 auto; max-width: 600px; width: 100%; max-height: 400px;">
+</div>
+<ul>
+<li>
+<p>If both A and B are left unconnected to the nearby VCC pad, which is the case by default, Output will be momentarily high when touched.</p>
+</li>
+<li>
+<p>If only A is connected to VCC, output will be low momentarily when touched and high otherwise.</p>
+</li>
+<li>
+<p>If only B is connected to VCC, output will be latched to high when touched. It will become low when touched again.</p>
+</li>
+<li>
+<p>If both A and B are connected to VCC, output will be latched to low when touched. It will be latched back to high when touched again.</p>
+</li>
+</ul>
+<p>Here, i have connected B to VCC, which will act in self latching active high mode.</p>
+<div style="display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            align-items: center;">
+  <div style="width: 45%; height: 400px; 
+              display: flex; 
+              align-items: center; 
+              justify-content: center;">
+    <img src="LatchMode_TTP223.svg"
+         alt="TTP223 in Latch Mode"
+         style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  </div>
+  <div style="width: 45%; height: 400px; 
+              display: flex; 
+              align-items: center; 
+              justify-content: center;">
+    <img src="TTP223_LatchingMode.gif"
+         alt="Latching Mode working"
+         style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  </div>
+</div>
+One thing to note is that, you don't actually need to touch  the sensor to turn it on. Capacitance will be formed at a small distance and hence produce the output as shown below.
+<div>
+  <img src="NotActuallyTouch.gif"
+       alt="Not Actually Touch"
+       style="display: block; margin: 0 auto; max-width: 600px; width: 100%; height: auto;">
+</div>
+If yo do not want false detecton or if you just want to reduce the sensitivity, you can add a capacitor (10pF or so) across the pad for sensitivity adjustment.
+<p>If you need to increase the sensitivity, you can add a conductor to the copper pad</p>
+<div style="display: flex; gap: 20px; justify-content: center;">
+  <img src="TTP223_with_wire.jpeg" alt="TTP223 with wire for Increased sensitivity" width="45%">
+  <img src="NotActuallyTouch_Far.gif" alt="Not Actually Touch Increased sensitivity" width="45%">
+</div>
+<p>I hope you understood my blog. If any queries, feel free to reach out to me. Thank You!</p>
+<h1 id="references">References</h1>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=JuV29EQ96uQ" target="_blank" rel="noopener">Capacitive TTP223 Touch Sensors Explained with Arduino - Mario&rsquo;s Idea</a></li>
+</ol>
 
         </div>
 
@@ -421,7 +479,7 @@ document.documentElement.setAttribute('data-theme', theme)
           
           <div class="col-md-6 btn-improve-page">
              
-               <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/main/content/posts%5ccommunication_protocol%5ci2c%5cindex.md" title="Improve this page" target="_blank" rel="noopener">
+               <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/main/content/posts%5cTTP223_Touch_Sensor%5cindex.md" title="Improve this page" target="_blank" rel="noopener">
             
                 <i class="fas fa-code-branch"></i>
                 Improve this page
@@ -458,23 +516,23 @@ document.documentElement.setAttribute('data-theme', theme)
   
 
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
     
     
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
   
   
 
@@ -482,13 +540,24 @@ document.documentElement.setAttribute('data-theme', theme)
 <div class="row next-prev-navigator">
   
     <div class="col-md-6 previous-article">
-      <a href="http://localhost:1313/posts/communication_protocol/uart/" title="UART: Universal Asynchronous Receiver and Transmitter" class="btn filled-button">
+      <a href="http://localhost:1313/posts/introduction/" title="Introduction" class="btn filled-button">
         <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
-        <div class="next-prev-text">UART: Universal Asynchronous Receiver and Transmitter</div>
+        <div class="next-prev-text">Introduction</div>
       </a>
     </div>
   
   
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="http://localhost:1313/posts/category/sub-category/rich-content/" title="Rich Content" class="btn filled-button">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Rich Content</div>
+        </a>
+      </div>
+    
 </div>
 
       <hr />
@@ -517,15 +586,7 @@ document.documentElement.setAttribute('data-theme', theme)
       <h5 class="text-center ps-3">Table of Contents</h5>
       <hr>
       <div class="toc">
-        <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#complete-post-coming-soon">Complete Post Coming Soon&hellip;</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+        <nav id="TableOfContents"></nav>
       </div>
     </div>
     
