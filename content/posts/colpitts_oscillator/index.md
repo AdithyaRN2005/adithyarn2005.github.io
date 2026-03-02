@@ -6,15 +6,15 @@ menu:
   sidebar:
     name: Colpitts Oscillator
     identifier: colpitts-oscillator
-    weight: 10
+    weight: 30
 tags: ["Basic", "Multi-lingual"]
 categories: ["Basic"]
 ---
-# Introduction
+## Introduction
 
 In this article, I'm going to discuss about Colpitts Oscillator. We will first look into the theory on how colpitts oscillator work and then implement one on our own in breadboard. We'll also look into practical challenges of making the oscillator in a breadboard.
 
-# What's a Oscillator? 
+## What's a Oscillator? 
 
 Oscillator is a circuit that generates a aleternating current signal from the power supplied to it without any external signal. This is generally used in generating a clock signal. It is also used in many sensing applications.
 
@@ -31,8 +31,8 @@ This circuit can be divided into 3 parts:
 2. LC Tank Circuit
 3. Feedback
 
-# Full Post Coming Soon!!!
-## The folowing topics will be added soon to this posts
+## Full Post Coming Soon!!!
+The folowing topics will be added soon to this posts
 1. Calculation of Cutoff Frequency
 2. How to pick the value of L and C?
 3. Practical Limitiation - Opamp Limitation, ESR of Capacitor

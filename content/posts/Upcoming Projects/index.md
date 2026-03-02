@@ -2,6 +2,8 @@
 title: "Projects BucketList"
 date: 2020-06-08T08:06:25+06:00
 description: Project planner
+draft: true
+
 menu:
   sidebar:
     name: BucketList

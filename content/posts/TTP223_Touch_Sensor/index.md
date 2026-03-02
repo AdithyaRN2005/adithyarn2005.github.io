@@ -1,12 +1,12 @@
 ---
-title: "All you need to know about TTP223 Capaciitive Touch Sensor"
-date: 2026-02-08T08:06:25+06:00
+title: "All you need to know about TTP223 Capacitive Touch Sensor"
+date: 2026-03-02T08:06:25+06:00
 description: Complete theory and practical use of TTP223 Capacitive Touch Sensor
 menu:
   sidebar:
     name: TTP223 Touch Sensor
     identifier: ttp223-touch
-    weight: 10
+    weight: 20
 tags: ["Basic", "Multi-lingual"]
 categories: ["Basic"]
 ---
@@ -17,7 +17,7 @@ A capacitive touch sensor detect touch by measuring variation in capacitance whe
 
 
 
-Genrerally, in a capacitive touch sensor, copper pad on PCB act as bottom conductive plate, PCB material along with air act as dielectric and our finger act as the second plate. Therefore a capacitance is formed when our finger is brought closer to the copper pad.  TTP223 will detect this change in capacitance and provide a usable output. TTP223 can be configured for Active HIGH or Active LOW output. In both modes it suports both momentary and self latching output. However, every TTP223 module may not provide us the choice to configure. 
+Generally, in a capacitive touch sensor, copper pad on PCB act as bottom conductive plate, PCB material along with air act as dielectric and our finger act as the second plate. Therefore a capacitance is formed when our finger is brought closer to the copper pad.  TTP223 will detect this change in capacitance and provide an output. TTP223 can be configured for Active HIGH or Active LOW output. In both modes it suports both momentary and self latching output. However, every TTP223 module may not provide us the choice to configure. 
 
 Here, I'm using this small red TTP223 capacitance touch module which provide us configuration choice. By default it comes in Active HIGH momentary output configuration. Inorder to configure the output, we have to short the necessary A or B pad to VCC (VCC pad is available near to both A and B).
 

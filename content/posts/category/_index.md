@@ -1,5 +1,7 @@
 ---
 title: Top Category Sample
+draft: true
+
 menu:
   sidebar:
     name: Category
